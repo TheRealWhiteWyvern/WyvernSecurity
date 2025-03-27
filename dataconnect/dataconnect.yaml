@@ -1,5 +1,5 @@
 specVersion: "v1"
-serviceId: "firebase"
+serviceId: "wyvernsecurity"
 location: "us-central1"
 schema:
   source: "./schema"
@@ -7,6 +7,6 @@ schema:
     postgresql:
       database: "fdcdb"
       cloudSql:
-        instanceId: "firebase-fdc"
+        instanceId: "wyvernsecurity-fdc"
       # schemaValidation: "COMPATIBLE"
 connectorDirs: ["./connector"]
