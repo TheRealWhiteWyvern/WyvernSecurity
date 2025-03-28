@@ -13,16 +13,10 @@ class LandingPage extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'Welcome to Wyvern Security!',
-              style: MainTheme.h1Black,
+              'Wyvern Security',
+              style: MainTheme.h1White,
             ),
             const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/home');
-              },
-              child: const Text('Go to Home Page'),
-            ),
           ],
         ),
       ),

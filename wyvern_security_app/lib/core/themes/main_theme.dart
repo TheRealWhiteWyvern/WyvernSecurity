@@ -26,4 +26,10 @@ class MainTheme {
       color: Colors.black,
       decoration: TextDecoration.none);
 
+  static TextStyle h1White = const TextStyle(
+      fontSize: 24,
+      fontFamily: 'Audiowide-Regular',
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      decoration: TextDecoration.none);
 }
