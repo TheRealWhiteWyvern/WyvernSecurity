@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "152523278613",
+    "project_id": "wyvernsecurity-backend",
+    "storage_bucket": "wyvernsecurity-backend.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152523278613:android:aa1961329cee3e7832811c",
+        "android_client_info": {
+          "package_name": "com.example.wyvern_security_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHoas1iEZxqxsTOh7bjJzDSFMb6fBhgmY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

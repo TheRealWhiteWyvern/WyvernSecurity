@@ -1,0 +1,38 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "wyvernsecurity-backend",
+          "appId": "1:152523278613:android:aa1961329cee3e7832811c",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "wyvernsecurity-backend",
+          "configurations": {
+            "android": "1:152523278613:android:aa1961329cee3e7832811c",
+            "ios": "1:152523278613:ios:a96cdaf6cad1b92132811c",
+            "macos": "1:152523278613:ios:a96cdaf6cad1b92132811c",
+            "web": "1:152523278613:web:3c25bf1e54ee87ca32811c",
+            "windows": "1:152523278613:web:cefdfb1272b4997732811c"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "dataconnect": {
+      "dataDir": "dataconnect/.dataconnect/pgliteData"
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
