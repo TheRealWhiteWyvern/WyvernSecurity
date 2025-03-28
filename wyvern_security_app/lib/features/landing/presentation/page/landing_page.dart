@@ -16,7 +16,16 @@ class LandingPage extends StatelessWidget {
               children: [
                 Text(
                   'Wyvern\nSecurity',
-                  style: MainTheme.titleWhite,
+                  style: MainTheme.h1White.copyWith(
+                    fontSize: 84,
+                    shadows: [
+                      Shadow(
+                        offset: Offset(2.0, 2.0), // Position of the shadow
+                        blurRadius: 4.0, // Blur effect
+                        color: Colors.black, // Shadow color
+                      ),
+                    ],
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ],
