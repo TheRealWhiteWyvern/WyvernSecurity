@@ -28,7 +28,7 @@ class MainTheme {
 
   static TextStyle h1White = const TextStyle(
       fontSize: 24,
-      fontFamily: 'Audiowide-Regular',
+      fontFamily: 'Audiowide',
       fontWeight: FontWeight.w400,
       color: Colors.white,
       decoration: TextDecoration.none);
