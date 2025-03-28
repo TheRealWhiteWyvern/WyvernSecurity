@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wyvern_security_app/core/themes/main_theme.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -6,23 +7,51 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Wyvern Security'),
-      ),
+      backgroundColor: MainTheme.wyvernDarkGrey,
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            const Text(
-              'Welcome to Wyvern Security!',
-              style: TextStyle(fontSize: 24),
+            Column(
+              children: [
+                Text(
+                  'Wyvern\nSecurity',
+                  style: MainTheme.h1White.copyWith(
+                    fontSize: 84,
+                    shadows: [
+                      Shadow(
+                        offset: Offset(2.0, 2.0), // Position of the shadow
+                        blurRadius: 4.0, // Blur effect
+                        color: Colors.black, // Shadow color
+                      ),
+                    ],
+                  ),
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ),
-            const SizedBox(height: 20),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/home');
-              },
-              child: const Text('Go to Home Page'),
+            Column(
+              children: [
+                Text(
+                  'Your Security, Our Priority',
+                  style: MainTheme.h3White,
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Text(
+                  'LOGIN HERE',
+                  style: MainTheme.h2White,
+                  textAlign: TextAlign.center,
+                ),
+                Text(
+                  'REGISTER HERE',
+                  style: MainTheme.h2White,
+                  textAlign: TextAlign.center,
+                ),
+              ],
             ),
           ],
         ),
