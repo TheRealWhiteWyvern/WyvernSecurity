@@ -20,13 +20,41 @@ class MainTheme {
 
   //Font configs
   static TextStyle h1Black = const TextStyle(
-      fontSize: 24,
+      fontSize: 48,
       fontFamily: 'Audiowide',
       fontWeight: FontWeight.w400,
       color: Colors.black,
       decoration: TextDecoration.none);
 
   static TextStyle h1White = const TextStyle(
+      fontSize: 48,
+      fontFamily: 'Audiowide',
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      decoration: TextDecoration.none);
+
+  static TextStyle h2Black = const TextStyle(
+      fontSize: 32,
+      fontFamily: 'Audiowide',
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
+      decoration: TextDecoration.none);
+
+  static TextStyle h2White = const TextStyle(
+      fontSize: 32,
+      fontFamily: 'Audiowide',
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      decoration: TextDecoration.none);
+
+  static TextStyle h3Black = const TextStyle(
+      fontSize: 24,
+      fontFamily: 'Audiowide',
+      fontWeight: FontWeight.w400,
+      color: Colors.black,
+      decoration: TextDecoration.none);
+
+  static TextStyle h3White = const TextStyle(
       fontSize: 24,
       fontFamily: 'Audiowide',
       fontWeight: FontWeight.w400,

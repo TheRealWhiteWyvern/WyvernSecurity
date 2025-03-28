@@ -10,13 +10,38 @@ class LandingPage extends StatelessWidget {
       backgroundColor: MainTheme.wyvernDarkGrey,
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: <Widget>[
-            Text(
-              'Wyvern Security',
-              style: MainTheme.h1White,
+            Column(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(64.0),
+                  child: Text(
+                    'Wyvern\nSecurity',
+                    style: MainTheme.h1White,
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(height: 20),
+            Column(
+              children: [
+                Text(
+                  'Your Security, Our Priority',
+                  style: MainTheme.h3White,
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Text(
+                  'LOGIN HERE',
+                  style: MainTheme.h2White,
+                  textAlign: TextAlign.center,
+                ),
+              ],
+            ),
           ],
         ),
       ),
