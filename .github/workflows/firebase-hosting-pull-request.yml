@@ -24,3 +24,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WYVERNSECURITY_BACKEND }}
           projectId: wyvernsecurity-backend
+          entryPoint: wyvern_security_app

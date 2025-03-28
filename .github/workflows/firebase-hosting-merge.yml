@@ -23,3 +23,4 @@ jobs:
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_WYVERNSECURITY_BACKEND }}
           channelId: live
           projectId: wyvernsecurity-backend
+          entryPoint: wyvern_security_app
