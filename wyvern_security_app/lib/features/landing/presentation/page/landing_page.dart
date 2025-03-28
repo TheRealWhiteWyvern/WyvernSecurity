@@ -14,13 +14,10 @@ class LandingPage extends StatelessWidget {
           children: <Widget>[
             Column(
               children: [
-                Padding(
-                  padding: const EdgeInsets.all(64.0),
-                  child: Text(
-                    'Wyvern\nSecurity',
-                    style: MainTheme.h1White,
-                    textAlign: TextAlign.center,
-                  ),
+                Text(
+                  'Wyvern\nSecurity',
+                  style: MainTheme.titleWhite,
+                  textAlign: TextAlign.center,
                 ),
               ],
             ),
@@ -37,6 +34,11 @@ class LandingPage extends StatelessWidget {
               children: [
                 Text(
                   'LOGIN HERE',
+                  style: MainTheme.h2White,
+                  textAlign: TextAlign.center,
+                ),
+                Text(
+                  'REGISTER HERE',
                   style: MainTheme.h2White,
                   textAlign: TextAlign.center,
                 ),

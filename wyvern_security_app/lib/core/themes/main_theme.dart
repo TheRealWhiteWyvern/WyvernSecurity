@@ -19,6 +19,13 @@ class MainTheme {
   static Color wyvernWhite = const Color(0xFFFFFFFF);
 
   //Font configs
+  static TextStyle titleWhite = const TextStyle(
+      fontSize: 86,
+      fontFamily: 'Audiowide',
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      decoration: TextDecoration.none);
+
   static TextStyle h1Black = const TextStyle(
       fontSize: 48,
       fontFamily: 'Audiowide',
