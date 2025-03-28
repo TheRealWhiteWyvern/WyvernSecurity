@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:wyvern_security_app/core/themes/main_theme.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -6,16 +7,14 @@ class LandingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Wyvern Security'),
-      ),
+      backgroundColor: MainTheme.wyvernDarkGrey,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            const Text(
+            Text(
               'Welcome to Wyvern Security!',
-              style: TextStyle(fontSize: 24),
+              style: MainTheme.h1Black,
             ),
             const SizedBox(height: 20),
             ElevatedButton(
