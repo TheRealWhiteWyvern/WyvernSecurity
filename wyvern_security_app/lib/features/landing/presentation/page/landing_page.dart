@@ -41,15 +41,25 @@ class LandingPage extends StatelessWidget {
             ),
             Column(
               children: [
-                Text(
-                  'LOGIN HERE',
-                  style: MainTheme.h2White,
-                  textAlign: TextAlign.center,
+                ElevatedButton(
+                  onPressed: () {
+                    // Navigate to login page
+                  },
+                  child: Text(
+                    'LOGIN HERE',
+                    style: MainTheme.h2White,
+                    textAlign: TextAlign.center,
+                  ),
                 ),
-                Text(
-                  'REGISTER HERE',
-                  style: MainTheme.h2White,
-                  textAlign: TextAlign.center,
+                ElevatedButton(
+                  onPressed: () {
+                    // Navigate to login page
+                  },
+                  child: Text(
+                    'REGISTER HERE',
+                    style: MainTheme.h2White,
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               ],
             ),

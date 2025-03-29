@@ -1,11 +1,12 @@
 {
-    "name": "wyvern_security_app",
-    "short_name": "wyvern_security_app",
+    "name": "Wyvern Security",
+    "short_name": "Wyvern Security",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "description": "A Wyvern Security application for managing security tasks and incidents.",
+    "lang": "en-UK",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
