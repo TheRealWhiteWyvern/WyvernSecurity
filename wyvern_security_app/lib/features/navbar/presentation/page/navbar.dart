@@ -13,18 +13,24 @@ class BottomNavBar extends StatelessWidget {
   }) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
+    int currentPageIndex = currentIndex;// Initialize currentPageIndex with the passed index
     return NavigationBar(
       onDestinationSelected: (index) {
         onDestinationSelected(index);
         if (index == 0) {
           Navigator.pushNamed(context, Routes.home);
+          currentPageIndex = index; // Update currentPageIndex when navigating
         } else if (index == 1) {
           Navigator.pushNamed(context, Routes.about);
+          currentPageIndex = index; // Update currentPageIndex when navigating
         } else if (index == 2) {
           Navigator.pushNamed(context, '/messages');
+          currentPageIndex = index; // Update currentPageIndex when navigating
         }
       },
+      indicatorColor: Colors.amber,
+      selectedIndex: currentPageIndex,
       destinations: [
         NavigationDestination(
           selectedIcon: Icon(Icons.home),
