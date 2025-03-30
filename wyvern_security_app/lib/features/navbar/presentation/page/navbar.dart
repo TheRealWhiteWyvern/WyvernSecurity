@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:badges/badges.dart' as custom_badges; // Use an alias to avoid conflicts
 import 'package:wyvern_security_app/routes.dart';
+import 'package:wyvern_security_app/core/themes/main_theme.dart';
 
 class BottomNavBar extends StatelessWidget {
   final int currentIndex;
@@ -16,6 +17,7 @@ class BottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) { 
     int currentPageIndex = currentIndex;// Initialize currentPageIndex with the passed index
     return NavigationBar(
+      backgroundColor: MainTheme.wyvernLightGrey,
       onDestinationSelected: (index) {
         onDestinationSelected(index);
         if (index == 0) {
@@ -29,7 +31,7 @@ class BottomNavBar extends StatelessWidget {
           currentPageIndex = index; // Update currentPageIndex when navigating
         }
       },
-      indicatorColor: Colors.amber,
+      indicatorColor: MainTheme.wyvernWhite,
       selectedIndex: currentPageIndex,
       destinations: [
         NavigationDestination(
@@ -38,8 +40,8 @@ class BottomNavBar extends StatelessWidget {
           label: 'Home',
         ),
         NavigationDestination(
-          icon: custom_badges.Badge(child: Icon(Icons.notifications_sharp)),
-          label: 'Notifications',
+          icon: custom_badges.Badge(child: Icon(Icons.person_2)),
+          label: 'About',
         ),
         NavigationDestination(
           icon: custom_badges.Badge(badgeContent: Text('2'), child: Icon(Icons.messenger_sharp)),
