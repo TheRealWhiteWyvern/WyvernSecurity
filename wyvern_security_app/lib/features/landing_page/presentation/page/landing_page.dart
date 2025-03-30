@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wyvern_security_app/core/themes/main_theme.dart';
+import 'package:wyvern_security_app/routes.dart';
 
 class LandingPage extends StatelessWidget {
   const LandingPage({super.key});
@@ -41,24 +42,31 @@ class LandingPage extends StatelessWidget {
             ),
             Column(
               children: [
-                ElevatedButton(
-                  onPressed: () {
-                    // Navigate to login page
-                  },
-                  child: Text(
-                    'LOGIN HERE',
-                    style: MainTheme.h2White,
-                    textAlign: TextAlign.center,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Navigate to login page
+                      Navigator.pushNamed(context, Routes.home);
+                    },
+                    child: Text(
+                      'LOGIN HERE',
+                      style: MainTheme.h2Black,
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ),
-                ElevatedButton(
-                  onPressed: () {
-                    // Navigate to login page
-                  },
-                  child: Text(
-                    'REGISTER HERE',
-                    style: MainTheme.h2White,
-                    textAlign: TextAlign.center,
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      // Navigate to register page
+                    },
+                    child: Text(
+                      'REGISTER HERE',
+                      style: MainTheme.h2Black,
+                      textAlign: TextAlign.center,
+                    ),
                   ),
                 ),
               ],
