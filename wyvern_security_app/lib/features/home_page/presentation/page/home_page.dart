@@ -3,7 +3,7 @@ import 'package:wyvern_security_app/features/navbar/presentation/page/navbar.dar
 import 'package:wyvern_security_app/core/themes/main_theme.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({super.key});
 
   @override
   _HomePageState createState() => _HomePageState();

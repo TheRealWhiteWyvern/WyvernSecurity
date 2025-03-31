@@ -3,7 +3,7 @@ import 'package:wyvern_security_app/routes.dart';
 import 'package:wyvern_security_app/core/themes/main_theme.dart';
 
 class ErrorPage extends StatelessWidget {
-  const ErrorPage({Key? key}) : super(key: key);
+  const ErrorPage({super.key});
 
   @override
   Widget build(BuildContext context) {
