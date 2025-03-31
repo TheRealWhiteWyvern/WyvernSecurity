@@ -8,10 +8,10 @@ class BottomNavBar extends StatelessWidget {
   final ValueChanged<int> onDestinationSelected;
 
   const BottomNavBar({
-    Key? key,
+    super.key,
     required this.currentIndex,
     required this.onDestinationSelected,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) { 

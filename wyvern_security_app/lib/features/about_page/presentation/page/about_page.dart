@@ -3,13 +3,13 @@ import 'package:wyvern_security_app/features/navbar/presentation/page/navbar.dar
 import 'package:wyvern_security_app/core/themes/main_theme.dart';
 
 class AboutPage extends StatefulWidget {
-  const AboutPage({Key? key}) : super(key: key);
+  const AboutPage({super.key});
 
   @override
-  _AboutPageState createState() => _AboutPageState();
+  AboutPageState createState() => AboutPageState();
 }
 
-class _AboutPageState extends State<AboutPage> {
+class AboutPageState extends State<AboutPage> {
   int currentPageIndex = 1;
 
   @override
