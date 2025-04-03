@@ -27,7 +27,15 @@ class BottomNavBar extends StatelessWidget {
           Navigator.pushNamed(context, Routes.about);
           currentPageIndex = index; // Update currentPageIndex when navigating
         } else if (index == 2) {
-          Navigator.pushNamed(context, '/messages');
+          Navigator.pushNamed(context, Routes.message);
+          currentPageIndex = index; // Update currentPageIndex when navigating
+        }
+        else if (index == 3) {
+          Navigator.pushNamed(context, Routes.privacy);
+          currentPageIndex = index; // Update currentPageIndex when navigating
+        }
+        else if (index == 4) {
+          Navigator.pushNamed(context, Routes.misc);
           currentPageIndex = index; // Update currentPageIndex when navigating
         }
       },
@@ -46,6 +54,14 @@ class BottomNavBar extends StatelessWidget {
         NavigationDestination(
           icon: custom_badges.Badge(badgeContent: Text('2'), child: Icon(Icons.messenger_sharp)),
           label: 'Messages',
+        ),
+        NavigationDestination(
+          icon: custom_badges.Badge(child: Icon(Icons.privacy_tip_outlined)),
+          label: 'Privacy',
+        ),
+        NavigationDestination(
+          icon: custom_badges.Badge(child: Icon(Icons.miscellaneous_services)),
+          label: 'Misc',
         ),
       ],
     );
