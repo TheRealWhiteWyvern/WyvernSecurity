@@ -10,7 +10,7 @@ class MessagePage extends StatefulWidget {
 }
 
 class MessagePageState extends State<MessagePage> {
-  int currentPageIndex = 0;
+  int currentPageIndex = 2;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class MessagePageState extends State<MessagePage> {
       backgroundColor: MainTheme.wyvernDarkGrey,
       body: Center(
         child: Text(
-          'Home\nPage',
+          'Message\nPage',
           style: MainTheme.h1White.copyWith(
             fontSize: 84,
             shadows: [

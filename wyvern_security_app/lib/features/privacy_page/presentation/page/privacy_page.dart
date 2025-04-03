@@ -10,7 +10,7 @@ class PrivacyPage extends StatefulWidget {
 }
 
 class PrivacyPageState extends State<PrivacyPage> {
-  int currentPageIndex = 0;
+  int currentPageIndex = 4;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +18,7 @@ class PrivacyPageState extends State<PrivacyPage> {
       backgroundColor: MainTheme.wyvernDarkGrey,
       body: Center(
         child: Text(
-          'Home\nPage',
+          'Privacy\nPage',
           style: MainTheme.h1White.copyWith(
             fontSize: 84,
             shadows: [

@@ -3,6 +3,9 @@ import 'package:wyvern_security_app/features/home_page/presentation/page/home_pa
 import 'package:wyvern_security_app/features/landing_page/presentation/page/landing_page.dart';
 import 'package:wyvern_security_app/features/about_page/presentation/page/about_page.dart';
 import 'package:wyvern_security_app/features/error_page/presentation/page/error_page.dart';
+import 'package:wyvern_security_app/features/message_page/presentation/page/message_page.dart';
+import 'package:wyvern_security_app/features/privacy_page/presentation/page/privacy_page.dart';
+
 
 class NoTransitionPageRoute extends PageRoute {
   final WidgetBuilder builder;
@@ -35,6 +38,8 @@ class Routes {
   static const String home = '/home';
   static const String about = '/about';
   static const String error = '/error';
+  static const String message = '/messages';
+  static const String privacy = '/privacy';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
@@ -44,6 +49,10 @@ class Routes {
         return NoTransitionPageRoute(builder: (_) => HomePage());
       case about:
         return NoTransitionPageRoute(builder: (_) => AboutPage());
+      case message  :
+        return NoTransitionPageRoute(builder: (_) => MessagePage());
+      case privacy:
+        return NoTransitionPageRoute(builder: (_) => PrivacyPage());
       default:
         return NoTransitionPageRoute(builder: (_) => ErrorPage());
     }
