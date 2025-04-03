@@ -10,7 +10,7 @@ class MiscPage extends StatefulWidget {
 }
 
 class MiscPageState extends State<MiscPage> {
-  int currentPageIndex = 5;
+  int currentPageIndex = 4;
 
   @override
   Widget build(BuildContext context) {
