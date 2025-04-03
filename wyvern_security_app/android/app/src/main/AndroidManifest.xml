@@ -2,7 +2,7 @@
     <application
         android:label="Wyvern Security"
         android:name="Wyvern Security"
-        android:icon="@mipmap/ic_launcher">
+        android:icon="@mipmap/launcher_icon">
         <activity
             android:name=".MainActivity"
             android:exported="true"
