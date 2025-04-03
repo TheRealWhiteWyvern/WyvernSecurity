@@ -30,6 +30,14 @@ class BottomNavBar extends StatelessWidget {
           Navigator.pushNamed(context, '/messages');
           currentPageIndex = index; // Update currentPageIndex when navigating
         }
+        else if (index == 3) {
+          Navigator.pushNamed(context, '/privacy');
+          currentPageIndex = index; // Update currentPageIndex when navigating
+        }
+        else if (index == 4) {
+          Navigator.pushNamed(context, '/misc');
+          currentPageIndex = index; // Update currentPageIndex when navigating
+        }
       },
       indicatorColor: MainTheme.wyvernWhite,
       selectedIndex: currentPageIndex,
@@ -46,6 +54,14 @@ class BottomNavBar extends StatelessWidget {
         NavigationDestination(
           icon: custom_badges.Badge(badgeContent: Text('2'), child: Icon(Icons.messenger_sharp)),
           label: 'Messages',
+        ),
+        NavigationDestination(
+          icon: custom_badges.Badge(child: Icon(Icons.privacy_tip_outlined)),
+          label: 'Privacy',
+        ),
+        NavigationDestination(
+          icon: custom_badges.Badge(child: Icon(Icons.miscellaneous_services)),
+          label: 'Misc',
         ),
       ],
     );
