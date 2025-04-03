@@ -27,15 +27,15 @@ class BottomNavBar extends StatelessWidget {
           Navigator.pushNamed(context, Routes.about);
           currentPageIndex = index; // Update currentPageIndex when navigating
         } else if (index == 2) {
-          Navigator.pushNamed(context, '/messages');
+          Navigator.pushNamed(context, Routes.message);
           currentPageIndex = index; // Update currentPageIndex when navigating
         }
         else if (index == 3) {
-          Navigator.pushNamed(context, '/privacy');
+          Navigator.pushNamed(context, Routes.privacy);
           currentPageIndex = index; // Update currentPageIndex when navigating
         }
         else if (index == 4) {
-          Navigator.pushNamed(context, '/misc');
+          Navigator.pushNamed(context, Routes.misc);
           currentPageIndex = index; // Update currentPageIndex when navigating
         }
       },

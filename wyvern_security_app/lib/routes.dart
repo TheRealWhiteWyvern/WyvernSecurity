@@ -40,6 +40,7 @@ class Routes {
   static const String error = '/error';
   static const String message = '/messages';
   static const String privacy = '/privacy';
+  static const String misc = '/misc';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
     switch (settings.name) {
