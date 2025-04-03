@@ -10,7 +10,7 @@ class PrivacyPage extends StatefulWidget {
 }
 
 class PrivacyPageState extends State<PrivacyPage> {
-  int currentPageIndex = 4;
+  int currentPageIndex = 3;
 
   @override
   Widget build(BuildContext context) {

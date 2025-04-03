@@ -5,6 +5,7 @@ import 'package:wyvern_security_app/features/about_page/presentation/page/about_
 import 'package:wyvern_security_app/features/error_page/presentation/page/error_page.dart';
 import 'package:wyvern_security_app/features/message_page/presentation/page/message_page.dart';
 import 'package:wyvern_security_app/features/privacy_page/presentation/page/privacy_page.dart';
+import 'package:wyvern_security_app/features/misc_page/presentation/page/misc_page.dart';
 
 
 class NoTransitionPageRoute extends PageRoute {
@@ -54,6 +55,8 @@ class Routes {
         return NoTransitionPageRoute(builder: (_) => MessagePage());
       case privacy:
         return NoTransitionPageRoute(builder: (_) => PrivacyPage());
+      case misc:
+        return NoTransitionPageRoute(builder: (_) => MiscPage());
       default:
         return NoTransitionPageRoute(builder: (_) => ErrorPage());
     }
