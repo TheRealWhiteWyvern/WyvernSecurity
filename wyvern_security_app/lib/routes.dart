@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wyvern_security_app/features/mobile/home_page/presentation/page/home_page.dart';
-import 'package:wyvern_security_app/features/mobile/landing_page/presentation/page/landing_page.dart';
-import 'package:wyvern_security_app/features/mobile/about_page/presentation/page/about_page.dart';
-import 'package:wyvern_security_app/features/mobile/error_page/presentation/page/error_page.dart';
-import 'package:wyvern_security_app/features/mobile/message_page/presentation/page/message_page.dart';
-import 'package:wyvern_security_app/features/mobile/privacy_page/presentation/page/privacy_page.dart';
-import 'package:wyvern_security_app/features/mobile/misc_page/presentation/page/misc_page.dart';
+import 'package:wyvern_security_app/features/mobile/mobile_export.dart';
+import 'package:flutter/foundation.dart';
 
 
 class NoTransitionPageRoute extends PageRoute {
@@ -34,6 +29,7 @@ class NoTransitionPageRoute extends PageRoute {
 }
 
 class Routes {
+  
   //main routes
   static const String landing = '/';
   static const String home = '/home';
@@ -44,6 +40,13 @@ class Routes {
   static const String misc = '/misc';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
+    if (kIsWeb) {
+      print("Running on Web");
+    } else if (defaultTargetPlatform == TargetPlatform.android || defaultTargetPlatform == TargetPlatform.iOS) {
+      print("Running on Mobile");
+    } else {
+      print("Running on Desktop");
+    }
     switch (settings.name) {
       case landing:
         return NoTransitionPageRoute(builder: (_) => MobileLandingPage());
