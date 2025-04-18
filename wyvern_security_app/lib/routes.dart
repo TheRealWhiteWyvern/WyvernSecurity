@@ -1,11 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wyvern_security_app/features/home_page/presentation/page/home_page.dart';
-import 'package:wyvern_security_app/features/landing_page/presentation/page/landing_page.dart';
-import 'package:wyvern_security_app/features/about_page/presentation/page/about_page.dart';
-import 'package:wyvern_security_app/features/error_page/presentation/page/error_page.dart';
-import 'package:wyvern_security_app/features/message_page/presentation/page/message_page.dart';
-import 'package:wyvern_security_app/features/privacy_page/presentation/page/privacy_page.dart';
-import 'package:wyvern_security_app/features/misc_page/presentation/page/misc_page.dart';
+import 'package:wyvern_security_app/features/mobile/mobile_export.dart';
+import 'package:flutter/foundation.dart';
 
 
 class NoTransitionPageRoute extends PageRoute {
@@ -34,6 +29,7 @@ class NoTransitionPageRoute extends PageRoute {
 }
 
 class Routes {
+  
   //main routes
   static const String landing = '/';
   static const String home = '/home';
@@ -44,21 +40,28 @@ class Routes {
   static const String misc = '/misc';
 
   static Route<dynamic> generateRoute(RouteSettings settings) {
+    if (kIsWeb) {
+      print("Running on Web");
+    } else if (defaultTargetPlatform == TargetPlatform.android || defaultTargetPlatform == TargetPlatform.iOS) {
+      print("Running on Mobile");
+    } else {
+      print("Running on Desktop");
+    }
     switch (settings.name) {
       case landing:
-        return NoTransitionPageRoute(builder: (_) => LandingPage());
+        return NoTransitionPageRoute(builder: (_) => MobileLandingPage());
       case home:
-        return NoTransitionPageRoute(builder: (_) => HomePage());
+        return NoTransitionPageRoute(builder: (_) => MobileHomePage());
       case about:
-        return NoTransitionPageRoute(builder: (_) => AboutPage());
+        return NoTransitionPageRoute(builder: (_) => MobileAboutPage());
       case message  :
-        return NoTransitionPageRoute(builder: (_) => MessagePage());
+        return NoTransitionPageRoute(builder: (_) => MobileMessagePage());
       case privacy:
-        return NoTransitionPageRoute(builder: (_) => PrivacyPage());
+        return NoTransitionPageRoute(builder: (_) => MobilePrivacyPage());
       case misc:
-        return NoTransitionPageRoute(builder: (_) => MiscPage());
+        return NoTransitionPageRoute(builder: (_) => MobileMiscPage());
       default:
-        return NoTransitionPageRoute(builder: (_) => ErrorPage());
+        return NoTransitionPageRoute(builder: (_) => MobileErrorPage());
     }
   }
 }

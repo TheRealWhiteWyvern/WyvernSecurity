@@ -10,6 +10,12 @@
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
-        }
+        },
+        {
+            "type": "dart",
+            "request": "launch",
+            "name": "Launch Android Emulator",
+            "deviceId": "emulator-5554" // Replace with your emulator ID
+        },
     ]
 }
